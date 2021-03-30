@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("", {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("<connection string>", {useNewUrlParser: true, useUnifiedTopology: true})
         .then(()=> console.log("Connected to Database"))
         .catch((err) => console.log(err.message));
 const postSchema = {
